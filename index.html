@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password</title>
+  </head>
+  <body class="page light-theme">
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrap">
+          <button type="button" class="theme btn">Сменить тему</button>
+          <button type="button" class="instruction btn card__button button-show">Инструкция</button>
+        </div>
+        <h1 class="title">Генератор паролей</h1>
+        <label>
+          <input type="checkbox" name="subscription" class="only__letter check" />
+          Только буквы
+        </label>
+        <label>
+          <input type="checkbox" name="subscription" class="only__letter__number check" />
+          Только буквы и цифры
+        </label>
+        <div class="number__wrap">
+          <label class="number__label" for="number">Введите количество символов:</label>
+          <input type="number" class="number" value="7" id="number" max="20" />
+        </div>
+        <input type="text" class="pass" value="" /><br />
+        <div class="wrap">
+          <button type="button" class="gen btn">Генерировать</button>
+          <button type="button" class="copy btn">Копировать</button>
+        </div>
+        <div class="popup">
+          <div class="popup__content">
+            <ul class="instructions">
+              <li class="instruction">
+                <p>При необходиомсти выбрать количество символов</p>
+              </li>
+              <li class="instruction">
+                <p>При необходиомсти указать пароль только из букв или из букв и цифр</p>
+              </li>
+              <li class="instruction">
+                <p>Нажать кнопку "Генерировать"</p>
+              </li>
+              <li class="instruction">
+                <p>Нажать кнопку "Копировать"<br />(пароль скопирован в буфер обмена)</p>
+              </li>
+            </ul>
+            <button class="popup__button button-hide" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
